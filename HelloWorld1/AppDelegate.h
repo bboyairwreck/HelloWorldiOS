@@ -7,11 +7,14 @@
 //
 
 #import <UIKit/UIKit.h>
+#import "MakeBundles.h"
+#import "ViewController.h"
+#import "SendNotification.h"
+#import "ReceiveNotification.h"
 
 @interface AppDelegate : UIResponder <UIApplicationDelegate>
 
 @property (strong, nonatomic) UIWindow *window;
-
 
 @end
 

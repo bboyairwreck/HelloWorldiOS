@@ -8,8 +8,21 @@
 
 #import <UIKit/UIKit.h>
 
-@interface ViewController : UIViewController
+@interface ViewController : UIViewController <UIAlertViewDelegate>
 
+@property (nonatomic, strong) UISlider *slider;
+
++ (void) strings;
++ (void) compareObjects;
++ (void) forLoopsAndWhileLoops;
++ (void) customClassesAndObjects;
++ (void) numbers;
++ (void) arrays;
++ (void) dictionaries;
++ (void) sets;
+
+- (void) showAlert;
+- (void) createSlider;
 
 @end
 

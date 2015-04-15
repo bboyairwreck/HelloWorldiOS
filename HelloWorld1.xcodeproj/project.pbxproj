@@ -7,6 +7,12 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		0779A68E1A12CF4F001E8D24 /* Father.m in Sources */ = {isa = PBXBuildFile; fileRef = 0779A68D1A12CF4F001E8D24 /* Father.m */; };
+		07ABBC5D1A0CBFE300C8F206 /* Person.m in Sources */ = {isa = PBXBuildFile; fileRef = 07ABBC5C1A0CBFE300C8F206 /* Person.m */; };
+		07C9752D1A47BE5700BBF6FF /* Resources.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 07C9752C1A47BE5700BBF6FF /* Resources.bundle */; };
+		07C975301A47C3C300BBF6FF /* MakeBundles.m in Sources */ = {isa = PBXBuildFile; fileRef = 07C9752F1A47C3C300BBF6FF /* MakeBundles.m */; };
+		07C975331A47CE6700BBF6FF /* SendNotification.m in Sources */ = {isa = PBXBuildFile; fileRef = 07C975321A47CE6700BBF6FF /* SendNotification.m */; };
+		07C975361A47D2AE00BBF6FF /* ReceiveNotification.m in Sources */ = {isa = PBXBuildFile; fileRef = 07C975351A47D2AE00BBF6FF /* ReceiveNotification.m */; };
 		07EDF67119E9B708009096BA /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 07EDF67019E9B708009096BA /* main.m */; };
 		07EDF67419E9B708009096BA /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 07EDF67319E9B708009096BA /* AppDelegate.m */; };
 		07EDF67719E9B708009096BA /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 07EDF67619E9B708009096BA /* ViewController.m */; };
@@ -27,6 +33,18 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		0779A68B1A12CE36001E8D24 /* PersonProtocol.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PersonProtocol.h; sourceTree = "<group>"; };
+		0779A68C1A12CF4F001E8D24 /* Father.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Father.h; sourceTree = "<group>"; };
+		0779A68D1A12CF4F001E8D24 /* Father.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Father.m; sourceTree = "<group>"; };
+		07ABBC5B1A0CBFE300C8F206 /* Person.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = Person.h; path = ../Person.h; sourceTree = "<group>"; };
+		07ABBC5C1A0CBFE300C8F206 /* Person.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = Person.m; path = ../Person.m; sourceTree = "<group>"; };
+		07C9752C1A47BE5700BBF6FF /* Resources.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = Resources.bundle; sourceTree = "<group>"; };
+		07C9752E1A47C3C300BBF6FF /* MakeBundles.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MakeBundles.h; sourceTree = "<group>"; };
+		07C9752F1A47C3C300BBF6FF /* MakeBundles.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MakeBundles.m; sourceTree = "<group>"; };
+		07C975311A47CE6700BBF6FF /* SendNotification.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SendNotification.h; sourceTree = "<group>"; };
+		07C975321A47CE6700BBF6FF /* SendNotification.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SendNotification.m; sourceTree = "<group>"; };
+		07C975341A47D2AE00BBF6FF /* ReceiveNotification.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ReceiveNotification.h; sourceTree = "<group>"; };
+		07C975351A47D2AE00BBF6FF /* ReceiveNotification.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ReceiveNotification.m; sourceTree = "<group>"; };
 		07EDF66B19E9B708009096BA /* HelloWorld1.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = HelloWorld1.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		07EDF66F19E9B708009096BA /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		07EDF67019E9B708009096BA /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
@@ -63,6 +81,7 @@
 		07EDF66219E9B708009096BA = {
 			isa = PBXGroup;
 			children = (
+				07C9752C1A47BE5700BBF6FF /* Resources.bundle */,
 				07EDF66D19E9B708009096BA /* HelloWorld1 */,
 				07EDF68719E9B709009096BA /* HelloWorld1Tests */,
 				07EDF66C19E9B708009096BA /* Products */,
@@ -81,14 +100,25 @@
 		07EDF66D19E9B708009096BA /* HelloWorld1 */ = {
 			isa = PBXGroup;
 			children = (
+				07ABBC5B1A0CBFE300C8F206 /* Person.h */,
+				07ABBC5C1A0CBFE300C8F206 /* Person.m */,
 				07EDF67219E9B708009096BA /* AppDelegate.h */,
 				07EDF67319E9B708009096BA /* AppDelegate.m */,
+				07C975311A47CE6700BBF6FF /* SendNotification.h */,
+				07C975321A47CE6700BBF6FF /* SendNotification.m */,
+				07C975341A47D2AE00BBF6FF /* ReceiveNotification.h */,
+				07C975351A47D2AE00BBF6FF /* ReceiveNotification.m */,
 				07EDF67519E9B708009096BA /* ViewController.h */,
 				07EDF67619E9B708009096BA /* ViewController.m */,
+				0779A68B1A12CE36001E8D24 /* PersonProtocol.h */,
+				0779A68C1A12CF4F001E8D24 /* Father.h */,
+				0779A68D1A12CF4F001E8D24 /* Father.m */,
 				07EDF67819E9B708009096BA /* Main.storyboard */,
 				07EDF67B19E9B708009096BA /* Images.xcassets */,
 				07EDF67D19E9B708009096BA /* LaunchScreen.xib */,
 				07EDF66E19E9B708009096BA /* Supporting Files */,
+				07C9752E1A47C3C300BBF6FF /* MakeBundles.h */,
+				07C9752F1A47C3C300BBF6FF /* MakeBundles.m */,
 			);
 			path = HelloWorld1;
 			sourceTree = "<group>";
@@ -202,6 +232,7 @@
 				07EDF67A19E9B708009096BA /* Main.storyboard in Resources */,
 				07EDF67F19E9B708009096BA /* LaunchScreen.xib in Resources */,
 				07EDF67C19E9B708009096BA /* Images.xcassets in Resources */,
+				07C9752D1A47BE5700BBF6FF /* Resources.bundle in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -220,8 +251,13 @@
 			buildActionMask = 2147483647;
 			files = (
 				07EDF67719E9B708009096BA /* ViewController.m in Sources */,
+				07C975301A47C3C300BBF6FF /* MakeBundles.m in Sources */,
+				07C975361A47D2AE00BBF6FF /* ReceiveNotification.m in Sources */,
 				07EDF67419E9B708009096BA /* AppDelegate.m in Sources */,
+				07C975331A47CE6700BBF6FF /* SendNotification.m in Sources */,
+				07ABBC5D1A0CBFE300C8F206 /* Person.m in Sources */,
 				07EDF67119E9B708009096BA /* main.m in Sources */,
+				0779A68E1A12CF4F001E8D24 /* Father.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -414,6 +450,7 @@
 				07EDF69019E9B709009096BA /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		07EDF69119E9B709009096BA /* Build configuration list for PBXNativeTarget "HelloWorld1Tests" */ = {
 			isa = XCConfigurationList;
@@ -422,6 +459,7 @@
 				07EDF69319E9B709009096BA /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

@@ -17,6 +17,22 @@
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
     // Override point for customization after application launch.
+    
+    // Bundels
+    [MakeBundles createBundleWithImage];
+    
+    // Notifications
+    ReceiveNotification *receiveObj = [[ReceiveNotification alloc] init];
+    [receiveObj listenStringNotification];
+    [SendNotification sendAppendStringNotif];
+    
+    
+    self.window = [[UIWindow alloc] initWithFrame:[[UIScreen mainScreen] bounds]];
+    ViewController *vc = [[ViewController alloc] init];
+    [self.window setRootViewController:vc];
+    self.window.backgroundColor = [UIColor whiteColor];
+    [self.window makeKeyAndVisible];
+    
     return YES;
 }
 
